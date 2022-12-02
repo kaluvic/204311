@@ -1,7 +1,6 @@
 # 204311
 
-> `"Name" : "Chanin Rangsakorn"`
-> `"Code" : 620510590`
+> `"Name" : "Chanin Rangsakorn"` > `"Code" : 620510590`
 
 ---
 
@@ -16,5 +15,5 @@ status: "Finish"
 ## Assignment_2
 
 ```JSON
-status: "in-progress"
+status: "Finish"
 ```
