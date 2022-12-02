@@ -8,7 +8,7 @@
 
 # Assignment are named in each `Assignment_n` directory.
 
-> ## Assignment_1
+## Assignment_1
 
 ```JSON
 status: "Finish"
