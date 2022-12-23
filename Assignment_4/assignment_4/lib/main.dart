@@ -131,25 +131,26 @@ void main() {
         children: [
           const Align(alignment: Alignment.centerLeft),
           Image.asset("assets/images/hotel.jpg"),
-          const Text(
-            "UNESCO Sustainable",
-            textAlign: TextAlign.left,
-          ),
-          const Text(
-            "Hotel",
-            textAlign: TextAlign.left,
-            style: TextStyle(fontWeight: FontWeight.bold),
+          Row(
+            children: const [Text("UNESCO Sustainable")],
           ),
           Row(
             children: const [
-               Icon(Icons.star),
-               Icon(Icons.star),
-               Icon(Icons.star),
-               Icon(Icons.star),
-               Icon(Icons.star),
+              Text(
+                "Hotel",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )
             ],
-          )
-          const Text("Detail")
+          ),
+          Row(
+            children: const [
+              Icon(Icons.star),
+              Icon(Icons.star),
+              Icon(Icons.star),
+              Icon(Icons.star),
+              Icon(Icons.star),
+            ],
+          ),
         ],
       ),
     ),
