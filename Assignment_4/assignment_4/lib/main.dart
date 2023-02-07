@@ -127,7 +127,16 @@ void main() {
           IconButton(onPressed: null, icon: Icon(Icons.favorite_border))
         ],
       ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // floatingActionButton: const FloatingActionButton.extended(
+      //   label: SizedBox(
+      //       width: MediaQuery.of.size.width,
+      //       child: Text("select a room")),
+      //   onPressed: null,
+      // ),
+      bottomNavigationBar: Container(),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Align(alignment: Alignment.centerLeft),
           Image.asset("assets/images/hotel.jpg"),
@@ -138,7 +147,7 @@ void main() {
             children: const [
               Text(
                 "Hotel",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
               )
             ],
           ),
@@ -150,6 +159,32 @@ void main() {
               Icon(Icons.star),
               Icon(Icons.star),
             ],
+          ),
+          Row(
+            children: const [
+              Text(
+                "desc",
+                style: TextStyle(fontSize: 20),
+              )
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Text(
+            "9/10 Superb",
+            style: TextStyle(fontSize: 30),
+          ),
+          const Text("1000 verified"),
+          Row(
+            children: const [
+              Text("see 1000 reviews"),
+              Icon(Icons.navigate_next)
+            ],
+          ),
+          const Text(
+            "Popular",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
           ),
         ],
       ),
